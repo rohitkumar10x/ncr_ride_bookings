@@ -1,73 +1,98 @@
+# NCR Ride Booking Analysis
 
-# 📊 NCR Ride Bookings – Excel Dashboard Project
+> **Data-Driven Insights & Interactive Excel Dashboard.**
 
-## 📂 Dataset
-The dataset used in this project is uploaded in this repository.  
-
-📌 [**Download Dataset (CSV)**](./ncr_ride_bookings-%20Row%20Data.csv)
+This project focuses on analyzing over 145,000 ride-booking records in the National Capital Region (NCR) to identify growth opportunities, optimize operations, and reduce revenue leakage. By transforming massive raw data into an interactive Excel dashboard, this analysis provides actionable business intelligence for better decision-making.
 
 ---
 
-## 🛠️ Data Cleaning & Preparation
-Steps performed during preprocessing:
+## 📋 Project Overview
 
-- 🗑️ Removed duplicate **Booking IDs**  
-- 📆 Converted **Date-Time** columns into proper formats  
-- 🔢 Corrected numeric formatting for revenue/wait time  
-- ➕ Created derived columns: `Month`, `Day` using `TEXT()` function  
-- 📋 Structured into **Excel Table** for smooth analysis  
+### The Goal
+The primary objective of this project is to analyze ride-booking trends within the NCR region, identify key factors contributing to cancellations, and pinpoint strategic growth opportunities for fleet expansion.
 
----
-
-## 📊 Analysis & Modeling
-Pivot Tables + Excel formulas used to create insights:
-
-- 📈 **Business Trend Analysis** (Monthly & Weekly)  
-- ❌ **Cancelled Rides Breakdown** (Top reasons)  
-- ⚠️ **Incomplete Rides** – operational issues  
-- 🚖 **Vehicle Type Analysis** (Auto, Car, Bike)  
-- 📍 **Top Pickup Locations**  
-- 👤 **Top Customers by Revenue**  
+### The Data
+The analysis is based on a comprehensive dataset of **145,000+ booking records**, covering essential metrics such as:
+*   **Revenue & Success Revenue**
+*   **Cancellations (Driver & Customer side)**
+*   **Vehicle Types (Auto, Mini, Prime, etc.)**
+*   **Pickup Hotspots**
 
 ---
 
-## 🖼️ Dashboard Preview
-![Dashboard](./Dashboard.jpg)
+## 📈 Dashboard Visualization
+
+Below is the interactive Excel dashboard developed to provide a holistic view of operational and financial performance:
+
+![NCR Ride Booking Dashboard](https://github.com/rohitkumar10x/ncr_ride_bookings/blob/main/Dashboard.jpg?raw=true)
 
 ---
 
-## 🔑 Key Insights
-- 💰 **Total Booking Revenue:** 51.4M  
-- 🏢 **Company Realized Revenue:** 46.9M  
-- ❌ **~55K rides cancelled** → ~5M revenue loss  
-- ⏳ **Avg CTAT:** 29 mins → reduces driver utilization  
-- 🚖 **Auto rides highest demand** → fleet expansion required  
-- 📍 Identified **top 10 pickup hotspots**  
-- 👤 Highlighted **loyal/high-value customers**  
+## 🛠️ Technical Tools & Process
+
+### The Tech Stack
+*   **Microsoft Excel:** The core platform used for data cleaning, processing, and interactive dashboarding.
+*   **Pivot Tables & Charts:** Employed to summarize 145k+ records into dynamic visual summaries.
+*   **XLOOKUP & Advanced Formulas:** Used for efficient data retrieval and feature engineering (e.g., extracting Month and Day).
+*   **Conditional Formatting:** Utilized to instantly highlight critical operational issues like high wait times or low ratings.
+
+### Data Cleaning & Preparation
+To ensure 100% data accuracy, the following steps were taken:
+1.  **Removing Noise:** Deleted duplicate Booking IDs and handled missing values.
+2.  **Formatting:** Standardized Date-Time columns and corrected numeric formats for revenue and distance.
+3.  **Feature Engineering:** Created "Month" and "Day" columns using the `TEXT()` function for granular trend analysis.
+4.  **Structuring:** Organized raw data into an Excel Table for seamless integration with Pivot Tables.
 
 ---
 
-## ✅ Recommendations
-- 🚨 Reduce **cancellations** to prevent heavy revenue loss  
-- ⏳ Optimize **CTAT** for better customer experience  
-- 🚖 Increase **Auto fleet size** to meet demand  
-- 📊 Align **vehicle supply with customer demand**  
-- 🔍 Regular monitoring via dashboard for strategic growth  
+## 📊 Key Business Metrics (KPIs)
+
+| Metric | Value | Description |
+| :--- | :--- | :--- |
+| **Total Revenue** | ₹51.4M | Total booking value across all categories. |
+| **Success Revenue** | ₹46.9M | Actual revenue realized from completed rides. |
+| **Total Bookings** | 148.8K | Massive scale of records analyzed. |
+| **Avg. Rating** | 4.4 / 5 | High customer satisfaction despite operational challenges. |
 
 ---
 
-## 📂 Project Files
-- `ncr_ride_bookings-%20Row%20Data.csv` → Cleaned dataset  
-- `Dashboard.jpg` → Dashboard preview  
-- `NCR_Ride_Bookings_Dashboard.xlsx` → Full interactive dashboard  
+## 📈 Key Findings & Insights
 
-📌 [**Google Drive Link – Project Files**](https://drive.google.com/drive/folders/1dFxBdA8L9BV5E_JJ4jI9UQcCfd23_dAU)
+### 1. Market Analysis: Auto Dominance
+*   **Highest Demand:** The **Auto** segment is the leading revenue contributor at **₹12.78M**.
+*   **Strategic Insight:** Auto and Mini segments represent over 45% of the total booking value. Expanding the Auto fleet presents the most significant opportunity for capturing more market share.
+
+### 2. Cancellation Analysis: Revenue Leakage
+*   **Estimated Revenue Loss:** Approximately **₹5.0M** is lost due to cancellations.
+*   **Driver Behavior:** Top issues include "Driver asked to cancel" and "Driver not moving towards pickup."
+*   **Location Issues:** Wrong addresses or pickup location mismatches are major contributors to customer-side cancellations.
+
+### 3. Operational Efficiency: Wait Time Analysis
+*   **Avg. CTAT (Customer Turnaround Time):** 29.2 mins. High wait times lead to customer frustration and lower retention.
+*   **Avg. VTAT (Vehicle Turnaround Time):** 8.5 mins. Drivers respond efficiently once a booking is accepted.
+*   **Target:** Optimize dispatch logic to reduce CTAT below 20 minutes for better utilization.
+
+### 4. Top Pickup Hotspots
+Highest demand locations identified:
+*   **AIIMS**
+*   **Badarpur**
+*   **Dwarka**
 
 ---
 
-## 🚀 Tech Stack
-- **Microsoft Excel** → Data Cleaning, Analysis, Dashboarding  
-- **Pivot Tables & Charts** → Interactive visuals  
-- **Excel Formulas** → Derived metrics & insights  
+## ✅ Strategic Recommendations
+
+*   **Reduce Cancellations:** Implement penalties or incentives to mitigate "Driver asked to cancel" issues and prevent revenue loss.
+*   **Fleet Expansion:** Increase the number of Autos to meet the high demand in the NCR region.
+*   **Optimize CTAT:** Improve routing and dispatch logic to reduce customer wait times.
+*   **Monitor Hotspots:** Position more drivers near high-demand locations like AIIMS and Dwarka to align supply with demand.
 
 ---
+
+## 🔮 Future Steps
+*   Automating the data pipeline for daily real-time updates.
+*   Integrating predictive modeling for demand forecasting to further optimize driver positioning.
+
+---
+
+**Author:** Rohit Kumar | *Data Analyst*
